@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  max-width: 700px;
+  max-width: 1020px;
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 60px;
   margin: 80px auto;
 
   h1 {
@@ -34,6 +34,11 @@ export const Main = styled.div`
   border-radius: 4px;
   padding: 20px;
   margin: 20px auto;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.7;
+  }
 
   input {
     flex: 1;
