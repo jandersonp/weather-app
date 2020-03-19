@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { darken } from 'polished';
 
 export const Container = styled.div`
   max-width: 1020px;
@@ -33,18 +34,21 @@ export const Container = styled.div`
 export const Main = styled.div`
   border-radius: 4px;
   padding: 20px;
-  margin: 20px auto;
-  transition: opacity 0.2s;
 
-  &:hover {
-    opacity: 0.7;
-  }
+  margin: 20px auto;
 
   input {
     flex: 1;
     border: 1px solid #eee;
+    background: #fff;
     padding: 10px 15px;
     border-radius: 4px;
     font-size: 16px;
+
+    transition: background 0.2s;
+
+    &:hover {
+      background: ${darken(0.03, '#fff')};
+    }
   }
 `;
